@@ -1,4 +1,6 @@
 # Change the default theme to be use when building the site with Hugo
+baseURL = "https://nguyennhann1109.github.io/nguyenhuunhan-2280602174-awsreport/"
+
 theme = "hugo-theme-learn"
 
 # For search functionality
@@ -18,7 +20,7 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "AWS System Manager"
+title = "Internship Report"
 weight = 1
 languageName = "English"
 
@@ -29,7 +31,7 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight = 20
 
 [Languages.vi]
-title = "AWS System Manager"
+title = "Báo cáo thực tập"
 weight = 2
 languageName = "Tiếng Việt"
 
