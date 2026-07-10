@@ -34,7 +34,7 @@ This technical proposal focuses on resolving the following infrastructure challe
 ### 3. Solution Architecture
 The AWS infrastructure design is detailed below:
 
-![AntiGroup AWS Architecture](/images/2-Proposal/Diagram.png)
+![AntiGroup AWS Architecture](/nguyenhuunhan-2280602174-awsreport/images/2-Proposal/Diagram.png)
 
 *AWS Services Used & Data Flow*
 - **Amazon VPC & Subnets (Multi-AZ)**: Secure Multi-AZ network topology separated into Public Subnets (hosting ALB, NAT Gateway) and Private Subnets (hosting ECS Fargate Tasks, RDS PostgreSQL, and ElastiCache Redis).

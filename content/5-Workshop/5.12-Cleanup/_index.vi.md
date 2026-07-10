@@ -57,3 +57,4 @@ pre: " <b> 5.12. </b> "
 1. Truy cập **VPC** ➔ **Your VPCs**.
 2. Chọn `realtime-collab-dev` ➔ Bấm **Actions** ➔ **Delete VPC**.
 3. AWS sẽ hiển thị danh sách tất cả các tài nguyên liên kết mạng (Subnets, Route Tables, Internet Gateway, NAT Gateway, Security Groups) sẽ được tự động xóa kèm theo. Bấm **Delete VPC** để xác nhận xóa sạch toàn bộ hạ tầng mạng.
+

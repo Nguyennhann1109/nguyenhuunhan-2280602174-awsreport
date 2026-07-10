@@ -1,0 +1,1972 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="description" content="">
+<meta name="author" content="journeyoftheaverageguy@gmail.com">
+
+    <link rel="icon" href="/nguyenhuunhan-2280602174-awsreport/images/favicon.png" type="image/png">
+
+    <title>Event 2 :: Báo cáo thực tập</title>
+
+    
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/nucleus.css?1783628024" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/fontawesome-all.min.css?1783628024" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/hybrid.css?1783628024" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/featherlight.min.css?1783628024" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/perfect-scrollbar.min.css?1783628024" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/auto-complete.css?1783628024" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/atom-one-dark-reasonable.css?1783628024" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/theme.css?1783628024" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/hugo-theme.css?1783628024" rel="stylesheet">
+    
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/theme-workshop.css?1783628024" rel="stylesheet">
+    
+    
+
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/jquery-3.3.1.min.js?1783628024"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/nguyenhuunhan-2280602174-awsreport/vi/2events/2.2-event2/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/nguyenhuunhan-2280602174-awsreport/js/lunr.min.js?1783628024"></script>
+<script type="text/javascript" src="/nguyenhuunhan-2280602174-awsreport/js/auto-complete.js?1783628024"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/nguyennhann1109.github.io\/nguyenhuunhan-2280602174-awsreport\/\/vi";
+    
+</script>
+<script type="text/javascript" src="/nguyenhuunhan-2280602174-awsreport/js/search.js?1783628024"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/" title="Nhật ký công việc" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/">
+          <b>1.</b>Nhật ký công việc
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week1/" title="Tuần 1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week1/">
+          <b>1.1</b>Tuần 1
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week2/" title="Tuần 2" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week2/">
+          <b>1.2</b>Tuần 2
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week3/" title="Tuần 3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week3/">
+          <b>1.3</b>Tuần 3
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week4/" title="Tuần 4" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week4/">
+          <b>1.4</b>Tuần 4
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week5/" title="Tuần 5" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week5/">
+          <b>1.5</b>Tuần 5
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week6/" title="Tuần 6" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week6/">
+          <b>1.6</b>Tuần 6
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week7/" title="Tuần 7" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week7/">
+          <b>1.7</b>Tuần 7
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week8/" title="Tuần 8" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week8/">
+          <b>1.8</b>Tuần 8
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week9/" title="Tuần 9" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week9/">
+          <b>1.9</b>Tuần 9
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week10/" title="Tuần 10" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week10/">
+          <b>1.10</b>Tuần 10
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week11/" title="Tuần 11" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week11/">
+          <b>1.11</b>Tuần 11
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week12/" title="Tuần 12" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/1worklog/week12/">
+          <b>1.12</b>Tuần 12
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/2events/" title="Các event đã tham gia" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/2events/">
+          <b>2.</b>Các event đã tham gia
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/2events/2.1-event1/" title="Event 1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/2events/2.1-event1/">
+          <b>2.1</b>Event 1
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/2events/2.2-event2/" title="Event 2" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/2events/2.2-event2/">
+          <b>2.2</b>Event 2
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/3blogs/" title="Các blog đã đăng" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/3blogs/">
+           <b> 3. </b> Các blog đã đăng
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/3blogs/3.1-blog1/" title="Blog 1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/3blogs/3.1-blog1/">
+          <b>3.1</b>Blog 1
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/3blogs/3.2-blog2/" title="Blog 2" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/3blogs/3.2-blog2/">
+          <b>3.2</b>Blog 2
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/3blogs/3.3-blog3/" title="Blog 3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/3blogs/3.3-blog3/">
+          <b>3.3</b>Blog 3
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/4bandexuat/" title="Bản đề xuất" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/4bandexuat/">
+           <b> 4. </b> Bản đề xuất
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/" title="Workshop" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/">
+           <b> 5. </b> Workshop
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.1-workshop-overview/" title="Giới thiệu" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.1-workshop-overview/">
+           <b> 5.1. </b> Giới thiệu
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.2-secrets-manager/" title="AWS Secrets Manager" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.2-secrets-manager/">
+           <b> 5.2. </b> AWS Secrets Manager
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.3-vpc-network/" title="VPC và Mạng" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.3-vpc-network/">
+           <b> 5.3. </b> VPC và Mạng
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.4-security-groups/" title="Security Groups" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.4-security-groups/">
+           <b> 5.4. </b> Security Groups
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.5-s3-buckets-iam/" title="S3 Buckets &amp; IAM Roles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.5-s3-buckets-iam/">
+           <b> 5.5. </b> S3 Buckets &amp; IAM Roles
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.6-rds-database/" title="RDS PostgreSQL" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.6-rds-database/">
+           <b> 5.6. </b> RDS PostgreSQL
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.7-elasticache-redis/" title="ElastiCache Redis" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.7-elasticache-redis/">
+           <b> 5.7. </b> ElastiCache Redis
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.8-ecr-push/" title="ECR &amp; Đẩy Docker Images" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.8-ecr-push/">
+           <b> 5.8. </b> ECR &amp; Đẩy Docker Images
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.9-load-balancer/" title="Application Load Balancer" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.9-load-balancer/">
+           <b> 5.9. </b> Application Load Balancer
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.10-cloudfront/" title="CloudFront Distribution" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.10-cloudfront/">
+           <b> 5.10. </b> CloudFront Distribution
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.11-ecs-fargate/" title="ECS Cluster &amp; Services" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.11-ecs-fargate/">
+           <b> 5.11. </b> ECS Cluster &amp; Services
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.12-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.12-cleanup/">
+           <b> 5.12. </b> Dọn dẹp tài nguyên
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/6-danhgia/" title="Tự đánh giá" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/6-danhgia/">
+           <b> 6. </b> Tự đánh giá
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/vi/7-chiasedonggopykien/" title="Chia sẻ &amp; đóng góp ý kiến" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/vi/7-chiasedonggopykien/">
+           <b> 7. </b> Chia sẻ &amp; đóng góp ý kiến
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="https://nguyennhann1109.github.io/nguyenhuunhan-2280602174-awsreport/2events/2.2-event2/">English</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="vi" value="https://nguyennhann1109.github.io/nguyenhuunhan-2280602174-awsreport/vi/2events/2.2-event2/" selected>Tiếng Việt</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>08-07-2026</font></i>
+    </left>
+    <left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+           
+            <i> 	<a style="color:orange">Trường Nhật  </a> <br>
+        <a style="color:orange">Hoàng Việt </a> <br>
+        <a style="color:orange">Hữu Nhân </a> <br>
+	<a style="color:orange">Gia Huy </a>
+               
+        </i>
+        </left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/nguyenhuunhan-2280602174-awsreport/vi/'>Báo cáo thực tập</a> > <a href='/nguyenhuunhan-2280602174-awsreport/vi/2events/'>Các event đã tham gia</a> > Event 2
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#thông-tin-sự-kiện">Thông tin sự kiện</a></li>
+    <li><a href="#ban-diễn-giả">Ban diễn giả</a></li>
+    <li><a href="#mục-tiêu-của-sự-kiện">Mục tiêu của sự kiện</a></li>
+    <li><a href="#nội-dung-chính-của-sự-kiện">Nội dung chính của sự kiện</a>
+      <ul>
+        <li><a href="#1-toàn-cảnh-thị-trường-cloud">1. Toàn cảnh thị trường Cloud</a></li>
+        <li><a href="#2-kiến-trúc-đám-mây-doanh-nghiệp-enterprise-cloud-architectures">2. Kiến trúc đám mây doanh nghiệp (Enterprise Cloud Architectures)</a></li>
+        <li><a href="#3-chiến-lược-phát-triển-sự-nghiệp">3. Chiến lược phát triển sự nghiệp</a></li>
+        <li><a href="#4-tư-duy-làm-việc-hiện-đại">4. Tư duy làm việc hiện đại</a></li>
+      </ul>
+    </li>
+    <li><a href="#nội-dung-chính-của-sự-kiện-1">Nội dung chính của sự kiện</a>
+      <ul>
+        <li><a href="#1-tiêu-chuẩn-intern-khốc-liệt-đến-ngỡ-ngàng">1. Tiêu chuẩn Intern &ldquo;khốc liệt&rdquo; đến ngỡ ngàng</a></li>
+        <li><a href="#2-bật-mí-về-thị-trường-tuyển-dụng-ẩn">2. Bật mí về &ldquo;Thị trường tuyển dụng ẩn&rdquo;</a></li>
+        <li><a href="#3-tinh-thần-pay-it-forward-của-fcaj">3. Tinh thần &ldquo;Pay it Forward&rdquo; của FCAJ</a></li>
+      </ul>
+    </li>
+    <li><a href="#kiến-thức-và-kinh-nghiệm-thu-được">Kiến thức và kinh nghiệm thu được</a></li>
+    <li><a href="#trải-nghiệm-và-kết-nối">Trải nghiệm và kết nối</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Event 2
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="aws-enterprise-cloud-architectures-and-industry-application-featuring-cloud-kinetics--renova-cloud">AWS: Enterprise Cloud Architectures and Industry Application featuring Cloud Kinetics &amp; Renova Cloud</h1>
+<h2 id="thông-tin-sự-kiện">Thông tin sự kiện</h2>
+<ul>
+<li><strong>Tên sự kiện:</strong> AWS: Enterprise Cloud Architectures and Industry Application featuring Cloud Kinetics &amp; Renova Cloud</li>
+<li><strong>Thời gian:</strong> 09:00, ngày 04/07/2026</li>
+<li><strong>Địa điểm:</strong> Tầng 26, Tòa nhà Bitexco, số 02 đường Hải Triều, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh</li>
+<li><strong>Hình thức:</strong> Online</li>
+<li><strong>Vai trò:</strong> Người tham dự</li>
+</ul>
+<h2 id="ban-diễn-giả">Ban diễn giả</h2>
+<ul>
+<li><strong>Mr. Nguyen Gia Hung</strong> – Head of Solutions Architect in Vietnam &amp; Cambodia, Amazon Web Services</li>
+<li><strong>Mr. Khang Nguyen</strong> – Solutions Architect, Cloud Kinetics</li>
+<li><strong>Ms. Nhu Tran</strong> – Account Manager, Amazon Web Services</li>
+<li><strong>Mr. Vinh Dinh</strong> – Senior Data Engineer, Renova Cloud</li>
+</ul>
+<h2 id="mục-tiêu-của-sự-kiện">Mục tiêu của sự kiện</h2>
+<p>Đây không đơn thuần là một buổi hội thảo lý thuyết, mà là chuyến Study Tour lần thứ 3 liên tiếp do Swinburne Việt Nam phối hợp cùng AWS và cộng đồng FCAJ (First Cloud AI Journey) tổ chức. Mục tiêu cốt lõi của sự kiện là thu hẹp khoảng cách giữa giảng đường và thực tế ngành thông qua việc kết nối sinh viên trực tiếp với các chuyên gia hàng đầu từ AWS, Cloud Kinetics và Renova Cloud. Sự kiện giúp bọn mình bước ra khỏi những lý thuyết cơ bản của môn học Điện toán đám mây để nhìn thấy bức tranh toàn cảnh về cách các doanh nghiệp lớn vận hành hệ thống hạ tầng trong thực tế.</p>
+<h2 id="nội-dung-chính-của-sự-kiện">Nội dung chính của sự kiện</h2>
+<h3 id="1-toàn-cảnh-thị-trường-cloud">1. Toàn cảnh thị trường Cloud</h3>
+<p>Xu hướng dịch chuyển mạnh mẽ lên đám mây của các hệ thống lõi cực lớn và phức tạp như Core Banking (hệ thống ngân hàng cốt lõi), bảo hiểm và booking.</p>
+<h3 id="2-kiến-trúc-đám-mây-doanh-nghiệp-enterprise-cloud-architectures">2. Kiến trúc đám mây doanh nghiệp (Enterprise Cloud Architectures)</h3>
+<p>Phiên chia sẻ chuyên sâu về các giải pháp ứng dụng công nghệ thực tế từ đại diện các đối tác lớn của AWS.</p>
+<h3 id="3-chiến-lược-phát-triển-sự-nghiệp">3. Chiến lược phát triển sự nghiệp</h3>
+<p>Định vị bản thân, hiểu rõ về mức lương kỳ vọng đi đôi với trách nhiệm, và tầm quan trọng của việc xây dựng &ldquo;sự hiện diện&rdquo; (visibility) trong ngành.</p>
+<h3 id="4-tư-duy-làm-việc-hiện-đại">4. Tư duy làm việc hiện đại</h3>
+<p>Cách đặt câu hỏi tinh chỉnh (refine), làm việc nhóm đa kỹ năng và rèn luyện tính kiên trì bền bỉ (consistency).</p>
+<h2 id="nội-dung-chính-của-sự-kiện-1">Nội dung chính của sự kiện</h2>
+<h3 id="1-tiêu-chuẩn-intern-khốc-liệt-đến-ngỡ-ngàng">1. Tiêu chuẩn Intern &ldquo;khốc liệt&rdquo; đến ngỡ ngàng</h3>
+<p>Anh Hưng (Head of SA tại AWS) chia sẻ câu chuyện thực tế về một bạn ứng tuyển vị trí Intern tại một ngân hàng lớn bị đánh trượt ngay vòng phỏng vấn chỉ vì không nắm rõ K8s (Kubernetes - hệ thống tự động hóa quản lý container). Đây là yêu cầu mà trước đây thậm chí ở mức Middle Engineer mới bị đòi hỏi, cho thấy thị trường đang cạnh tranh cực kỳ gắt gao.</p>
+<h3 id="2-bật-mí-về-thị-trường-tuyển-dụng-ẩn">2. Bật mí về &ldquo;Thị trường tuyển dụng ẩn&rdquo;</h3>
+<p>Rất nhiều đứa trong tụi mình hay thắc mắc tại sao các job Cloud ngon lành ít khi thấy xuất hiện trên các trang tuyển dụng đại trà. Sự thật là có tới 90% đến 100% các vị trí chất lượng tại các big tech hay đối tác lớn được tuyển dụng qua kênh nội bộ và giới thiệu (referral) từ cộng đồng.</p>
+<h3 id="3-tinh-thần-pay-it-forward-của-fcaj">3. Tinh thần &ldquo;Pay it Forward&rdquo; của FCAJ</h3>
+<p>Sự chuyển dịch ấn tượng khi 2/3 số sinh viên tham gia chuyến đi năm 2024, đến năm 2026 đã khoác lên mình chiếc áo đen quyền lực, trở thành những member, mentor nòng cốt quay lại nâng đỡ và trao cơ hội cho thế hệ đàn em đi sau.</p>
+<h2 id="kiến-thức-và-kinh-nghiệm-thu-được">Kiến thức và kinh nghiệm thu được</h2>
+<p>Đối với một đứa như mình vốn quen với việc viết code backend Spring Boot hay loay hoay thiết kế các bảng database SQL Server chạy ổn định ở local, buổi chia sẻ này thực sự mở ra một tư duy hoàn toàn mới.</p>
+<ul>
+<li>
+<p><strong>Về chuyên môn</strong>: Mình hiểu rằng để xây dựng một sản phẩm thương mại thực tế, tư duy tính năng thôi là chưa đủ. Mình cần phải chủ động làm quen với các khái niệm hạ tầng nâng cao, containerization (đóng gói ứng dụng) và Cloud Architecture từ sớm nếu không muốn bị tụt lại phía sau ngay từ vòng gửi xe.</p>
+</li>
+<li>
+<p><strong>Về kỹ năng mềm</strong>: Bài học về việc &ldquo;refine&rdquo; câu hỏi trước khi tìm sự trợ giúp từ mentor rất thấm thía — thay vì hỏi một câu chung chung, hãy đưa ra các giả định (assumption) để người trả lời dễ dàng đưa ra hướng đi đúng. Đồng thời, muốn đi xa và làm dự án lớn, mình phải biết kết nối với các bạn ở các khoa khác như Business hay Marketing để có góc nhìn đa chiều về sản phẩm trước khi mang đi đánh các giải Hackathon.</p>
+</li>
+</ul>
+<h2 id="trải-nghiệm-và-kết-nối">Trải nghiệm và kết nối</h2>
+<ul>
+<li>
+<p>Chuyến đi này thực sự truyền cho mình một nguồn năng lượng cực lớn nhưng cũng đi kèm một chút áp lực lành mạnh. Nhìn hình ảnh các bạn sinh viên Cần Thơ phải thức dậy từ 5 giờ sáng, vượt chặng đường 180km để có mặt tại AWS, mình nhận ra làn sóng cạnh tranh từ các bạn trẻ ngoài kia lớn đến thế nào.</p>
+</li>
+<li>
+<p>Sự kiện đã đập tan tư duy cũ kỹ theo kiểu &ldquo;hết thời trốn trong hang luyện công rồi tự nhiên thành anh hùng&rdquo;. Muốn có cơ hội tốt, bắt buộc phải xông pha, tham gia cộng đồng để tăng tính visibility của bản thân. Đúng như câu kết thúc đầy cảm hứng của diễn giả ở cuối chương trình: Vận may không tự nhiên xuất hiện, nhưng chúng ta càng hành động, càng dấn thân thì vận may sẽ tìm đến càng nhiều.</p>
+</li>
+</ul>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/nguyenhuunhan-2280602174-awsreport/vi/2events/2.1-event1/" title="Event 1"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/nguyenhuunhan-2280602174-awsreport/vi/3blogs/" title="Các blog đã đăng" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/clipboard.min.js?1783628024"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/perfect-scrollbar.min.js?1783628024"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/perfect-scrollbar.jquery.min.js?1783628024"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/jquery.sticky.js?1783628024"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/featherlight.min.js?1783628024"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/highlight.pack.js?1783628024"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/modernizr.custom-3.6.0.js?1783628024"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/learn.js?1783628024"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/hugo-learn.js?1783628024"></script>
+
+    <link href="/nguyenhuunhan-2280602174-awsreport/mermaid/mermaid.css?1783628024" rel="stylesheet" />
+    <script src="/nguyenhuunhan-2280602174-awsreport/mermaid/mermaid.js?1783628024"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

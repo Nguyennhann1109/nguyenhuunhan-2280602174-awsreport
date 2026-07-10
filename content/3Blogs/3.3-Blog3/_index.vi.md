@@ -59,4 +59,4 @@ Giá trị lớn nhất của **Amazon Q** có lẽ không nằm ở việc giú
 
 > **Bài viết gốc:** [AWS DevOps Blog - Accelerate your software development lifecycle with Amazon Q](https://aws.amazon.com/blogs/devops/accelerate-your-software-development-lifecycle-with-amazon-q/)
 
-![ConnectPrivate](/images/arcblog3.png)
+![ConnectPrivate](/nguyenhuunhan-2280602174-awsreport/images/arcblog3.png)

@@ -57,3 +57,4 @@ To avoid incurring unwanted charges on your AWS account after completing the wor
 1. Navigate to **VPC** ➔ **Your VPCs**.
 2. Select `realtime-collab-dev` ➔ Click **Actions** ➔ **Delete VPC**.
 3. AWS will show all associated resources (Subnets, Route Tables, Internet Gateway, NAT Gateway, Security Groups) that will be deleted automatically. Click **Delete VPC** to confirm.
+

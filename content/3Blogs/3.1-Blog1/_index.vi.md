@@ -48,4 +48,4 @@ Phương án tiếp cận này giúp loại bỏ hoàn toàn rủi ro từ các 
 
 > **Bài viết gốc:** [AWS Containers Blog - Automated deployments with GitHub Actions for Amazon ECS Express Mode](https://aws.amazon.com/vi/blogs/containers/automated-deployments-with-github-actions-for-amazon-ecs-express-mode/)
 
-![ConnectPrivate](/images/arcblog1.png)
+![ConnectPrivate](/nguyenhuunhan-2280602174-awsreport/images/arcblog1.png)

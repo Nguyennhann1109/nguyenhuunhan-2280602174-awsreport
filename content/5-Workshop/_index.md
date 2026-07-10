@@ -30,3 +30,4 @@ The deployment must strictly follow the sequence below to ensure dependent resou
 10. [CloudFront Distribution](5.10-cloudfront/)
 11. [ECS Cluster & Services](5.11-ecs-fargate/)
 12. [Resource Cleanup](5.12-cleanup/)
+

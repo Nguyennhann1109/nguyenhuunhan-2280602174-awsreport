@@ -13,7 +13,7 @@ Nền tảng **AntiGroup** được thiết kế dựa trên kiến trúc Cloud 
 #### Sơ đồ kiến trúc hạ tầng
 Kiến trúc chi tiết của nền tảng được mô tả qua sơ đồ dưới đây:
 
-![AntiGroup AWS Architecture](/images/2-Proposal/Diagram.png)
+![AntiGroup AWS Architecture](/nguyenhuunhan-2280602174-awsreport/images/2-Proposal/Diagram.png)
 
 #### Tổng quan các bước thực hiện
 Trong workshop này, chúng ta sẽ lần lượt đi qua các cấu hình chi tiết:
@@ -28,5 +28,6 @@ Trong workshop này, chúng ta sẽ lần lượt đi qua các cấu hình chi t
 9. **CloudFront Distribution**: Cấu hình HTTPS Ingress toàn cầu và tích hợp AWS WAF bảo vệ.
 10. **ECS Fargate**: Cấu hình Task Definitions và chạy Services với 2 Tasks song song.
 11. **Dọn dẹp tài nguyên**: Trình tự xóa bỏ các tài nguyên tránh phát sinh chi phí.
+
 
 

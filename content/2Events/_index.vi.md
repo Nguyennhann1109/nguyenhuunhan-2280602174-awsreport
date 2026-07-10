@@ -25,3 +25,4 @@ Trong suốt quá trình thực tập tại **Amazon Web Services (AWS) Vietnam*
 - **Địa điểm:** Tầng 26, Tòa nhà Bitexco, số 02 đường Hải Triều, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
 - **Hình thức:** Online
 - **Vai trò:** Người tham dự
+

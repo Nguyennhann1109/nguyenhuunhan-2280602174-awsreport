@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="description" content="">
+<meta name="author" content="journeyoftheaverageguy@gmail.com">
+
+    <link rel="icon" href="/nguyenhuunhan-2280602174-awsreport/images/favicon.png" type="image/png">
+
+    <title>ECS Cluster &amp; Services :: Internship Report</title>
+
+    
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/nucleus.css?1783628023" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/fontawesome-all.min.css?1783628023" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/hybrid.css?1783628023" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/featherlight.min.css?1783628023" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/perfect-scrollbar.min.css?1783628023" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/auto-complete.css?1783628023" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/atom-one-dark-reasonable.css?1783628023" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/theme.css?1783628023" rel="stylesheet">
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/hugo-theme.css?1783628023" rel="stylesheet">
+    
+    <link href="/nguyenhuunhan-2280602174-awsreport/css/theme-workshop.css?1783628023" rel="stylesheet">
+    
+    
+
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/jquery-3.3.1.min.js?1783628023"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.11-ecs-fargate/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/nguyenhuunhan-2280602174-awsreport/js/lunr.min.js?1783628023"></script>
+<script type="text/javascript" src="/nguyenhuunhan-2280602174-awsreport/js/auto-complete.js?1783628023"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/nguyennhann1109.github.io\/nguyenhuunhan-2280602174-awsreport\/";
+    
+</script>
+<script type="text/javascript" src="/nguyenhuunhan-2280602174-awsreport/js/search.js?1783628023"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/1worklog/" title="Work Log" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/1worklog/">
+          <b>1.</b>Work Log
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/1worklog/week1/" title="Week 1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/1worklog/week1/">
+          <b>1.1</b>Week 1
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/1worklog/week2/" title="Week 2" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/1worklog/week2/">
+          <b>1.2</b>Week 2
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/1worklog/week3/" title="Week 3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/1worklog/week3/">
+          <b>1.3</b>Week 3
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/1worklog/week4/" title="Week 4" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/1worklog/week4/">
+          <b>1.4</b>Week 4
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/1worklog/week5/" title="Week 5" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/1worklog/week5/">
+          <b>1.5</b>Week 5
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/1worklog/week6/" title="Week 6" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/1worklog/week6/">
+          <b>1.6</b>Week 6
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/1worklog/week7/" title="Week 7" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/1worklog/week7/">
+          <b>1.7</b>Week 7
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/1worklog/week8/" title="Week 8" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/1worklog/week8/">
+          <b>1.8</b>Week 8
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/1worklog/week9/" title="Week 9" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/1worklog/week9/">
+          <b>1.9</b>Week 9
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/1worklog/week10/" title="Week 10" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/1worklog/week10/">
+          <b>1.10</b>Week 10
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/1worklog/week11/" title="Week 11" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/1worklog/week11/">
+          <b>1.11</b>Week 11
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/1worklog/week12/" title="Week 12" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/1worklog/week12/">
+          <b>1.12</b>Week 12
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/2events/" title="Events Attended" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/2events/">
+          <b>2.</b>Events Attended
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/2events/2.1-event1/" title="Event 1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/2events/2.1-event1/">
+          <b>2.1</b>Event 1
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/2events/2.2-event2/" title="Event 2" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/2events/2.2-event2/">
+          <b>2.2</b>Event 2
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/3blogs/" title="Published Blogs" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/3blogs/">
+           <b> 3. </b> Published Blogs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/3blogs/3.1-blog1/" title="Blog 1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/3blogs/3.1-blog1/">
+          <b>3.1</b>Blog 1
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/3blogs/3.2-blog2/" title="Blog 2" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/3blogs/3.2-blog2/">
+          <b>3.2</b>Blog 2
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/3blogs/3.3-blog3/" title="Blog 3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/3blogs/3.3-blog3/">
+          <b>3.3</b>Blog 3
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/4bandexuat/" title="Proposal" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/4bandexuat/">
+           <b> 4. </b> Proposal
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/5-workshop/" title="Workshop" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/5-workshop/">
+           <b> 5. </b> Workshop
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.1-workshop-overview/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.1-workshop-overview/">
+           <b> 5.1. </b> Introduction
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.2-secrets-manager/" title="AWS Secrets Manager" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.2-secrets-manager/">
+           <b> 5.2. </b> AWS Secrets Manager
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.3-vpc-network/" title="VPC &amp; Networking" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.3-vpc-network/">
+           <b> 5.3. </b> VPC &amp; Networking
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.4-security-groups/" title="Security Groups" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.4-security-groups/">
+           <b> 5.4. </b> Security Groups
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.5-s3-buckets-iam/" title="S3 Buckets &amp; IAM Roles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.5-s3-buckets-iam/">
+           <b> 5.5. </b> S3 Buckets &amp; IAM Roles
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.6-rds-database/" title="RDS PostgreSQL" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.6-rds-database/">
+           <b> 5.6. </b> RDS PostgreSQL
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.7-elasticache-redis/" title="ElastiCache Redis" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.7-elasticache-redis/">
+           <b> 5.7. </b> ElastiCache Redis
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.8-ecr-push/" title="ECR &amp; Push Docker Images" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.8-ecr-push/">
+           <b> 5.8. </b> ECR &amp; Push Docker Images
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.9-load-balancer/" title="Application Load Balancer" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.9-load-balancer/">
+           <b> 5.9. </b> Application Load Balancer
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.10-cloudfront/" title="CloudFront Distribution" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.10-cloudfront/">
+           <b> 5.10. </b> CloudFront Distribution
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.11-ecs-fargate/" title="ECS Cluster &amp; Services" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.11-ecs-fargate/">
+           <b> 5.11. </b> ECS Cluster &amp; Services
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.12-cleanup/" title="Resource Cleanup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.12-cleanup/">
+           <b> 5.12. </b> Resource Cleanup
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/6-danhgia/" title="Self-Evaluation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/6-danhgia/">
+          <b>6.</b>Self-Evaluation
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/nguyenhuunhan-2280602174-awsreport/7-chiasedonggopykien/" title="Sharing and Feedback" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nguyenhuunhan-2280602174-awsreport/7-chiasedonggopykien/">
+           <b> 7. </b> Sharing and Feedback
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="https://nguyennhann1109.github.io/nguyenhuunhan-2280602174-awsreport/5-workshop/5.11-ecs-fargate/" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="vi" value="https://nguyennhann1109.github.io/nguyenhuunhan-2280602174-awsreport/vi/5-workshop/5.11-ecs-fargate/">Tiếng Việt</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>08-07-2026</font></i>
+    </left>
+    <left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+           
+            <i> 	<a style="color:orange">Trường Nhật  </a> <br>
+        <a style="color:orange">Hoàng Việt </a> <br>
+        <a style="color:orange">Hữu Nhân </a> <br>
+	<a style="color:orange">Gia Huy </a>
+               
+        </i>
+        </left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/nguyenhuunhan-2280602174-awsreport/'>Internship Report</a> > <a href='/nguyenhuunhan-2280602174-awsreport/5-workshop/'>Workshop</a> > ECS Cluster & Services
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              ECS Cluster &amp; Services
+            </h1>
+          
+
+        
+
+
+
+	<p>We will provision the serverless ECS Cluster on AWS Fargate, register our Task Definition, and start our Unified Service behind the ALB.</p>
+<hr>
+<h4 id="prerequisite-create-unified-backend-log-group">Prerequisite: Create Unified Backend Log Group</h4>
+<p>Go to <strong>CloudWatch</strong> ➔ <strong>Log groups</strong> ➔ <strong>Create log group</strong> named <code>/ecs/unified-backend</code> with <strong>Retention</strong>: <code>30 days</code>.</p>
+<p><img src="/images/5-Workshop/5.11-ECS-Fargate/ecs-cluster-create.png" alt="Create ECS Cluster"></p>
+<hr>
+<h4 id="1-create-ecs-cluster">1. Create ECS Cluster</h4>
+<p>Navigate to <strong>Elastic Container Service (ECS)</strong> ➔ <strong>Clusters</strong> ➔ click <strong>Create cluster</strong>:</p>
+<ul>
+<li><strong>Cluster name</strong>: <code>realtime-collab-dev</code></li>
+<li><strong>Infrastructure</strong>: Check Fargate only</li>
+</ul>
+<p><img src="/images/5-Workshop/5.11-ECS-Fargate/ecs-task-json-1.png" alt="Create ECS Cluster - Part 1"></p>
+<ul>
+<li><strong>Monitoring</strong>: Check Container Insights</li>
+</ul>
+<p><img src="/images/5-Workshop/5.11-ECS-Fargate/ecs-task-json-2.png" alt="Create ECS Cluster - Part 2"></p>
+<hr>
+<h4 id="2-create-task-definition-using-json">2. Create Task Definition using JSON</h4>
+<p>Navigate to <strong>ECS</strong> ➔ <strong>Task definitions</strong> ➔ <strong>Create new task definition</strong> ➔ select <strong>Create new revision with JSON</strong>.</p>
+<p><img src="/images/5-Workshop/5.11-ECS-Fargate/ecs-task-created.png" alt="Create Task Definition"></p>
+<h5 id="21-task-definition--unified-backend-realtime-collab-unified-backend">2.1 Task Definition — Unified Backend (<code>realtime-collab-unified-backend</code>)</h5>
+<p>Paste the JSON below and replace the placeholders:</p>
+<ul>
+<li>REPLACE_ACCOUNT_ID: Your 12-digit AWS Account ID.</li>
+<li>REPLACE_RDS_ENDPOINT: The RDS PostgreSQL Endpoint from Step 7.</li>
+<li>REPLACE_REDIS_ENDPOINT: The ElastiCache Redis Primary Endpoint from Step 8.</li>
+<li>REPLACE_DB_PASSWORD_ARN: The ARN of db-password.</li>
+<li>REPLACE_JWT_SECRET_ARN: The ARN of jwt-secret.</li>
+<li>REPLACE_TWILIO_SECRET_ARN: The ARN of twilio/api-credentials.</li>
+<li>REPLACE_REDIS_SECRET_ARN: The ARN of redis-auth-token.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;family&#34;</span>: <span style="color:#e6db74">&#34;realtime-collab-unified-backend&#34;</span>,
+  <span style="color:#f92672">&#34;networkMode&#34;</span>: <span style="color:#e6db74">&#34;awsvpc&#34;</span>,
+  <span style="color:#f92672">&#34;requiresCompatibilities&#34;</span>: [<span style="color:#e6db74">&#34;FARGATE&#34;</span>],
+  <span style="color:#f92672">&#34;cpu&#34;</span>: <span style="color:#e6db74">&#34;512&#34;</span>,
+  <span style="color:#f92672">&#34;memory&#34;</span>: <span style="color:#e6db74">&#34;1024&#34;</span>,
+  <span style="color:#f92672">&#34;executionRoleArn&#34;</span>: <span style="color:#e6db74">&#34;arn:aws:iam::REPLACE_ACCOUNT_ID:role/ecsTaskExecutionRole-realtime-collab-dev&#34;</span>,
+  <span style="color:#f92672">&#34;taskRoleArn&#34;</span>: <span style="color:#e6db74">&#34;arn:aws:iam::REPLACE_ACCOUNT_ID:role/ecsTaskRole-realtime-collab-dev&#34;</span>,
+  <span style="color:#f92672">&#34;containerDefinitions&#34;</span>: [{
+    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;unified-backend&#34;</span>,
+    <span style="color:#f92672">&#34;image&#34;</span>: <span style="color:#e6db74">&#34;REPLACE_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/unified-backend:latest&#34;</span>,
+    <span style="color:#f92672">&#34;portMappings&#34;</span>: [{ <span style="color:#f92672">&#34;containerPort&#34;</span>: <span style="color:#ae81ff">3000</span>, <span style="color:#f92672">&#34;protocol&#34;</span>: <span style="color:#e6db74">&#34;tcp&#34;</span> }],
+    <span style="color:#f92672">&#34;environment&#34;</span>: [
+      { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;PORT&#34;</span>,         <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;3000&#34;</span> },
+      { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;NODE_ENV&#34;</span>,     <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;production&#34;</span> },
+      { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;DB_HOST&#34;</span>,      <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;REPLACE_RDS_ENDPOINT&#34;</span> },
+      { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;REDIS_HOST&#34;</span>,   <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;REPLACE_REDIS_ENDPOINT&#34;</span> },
+      { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;AWS_REGION&#34;</span>,   <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;us-east-1&#34;</span> },
+      { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;DB_SSL&#34;</span>,       <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;true&#34;</span> },
+      { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;REDIS_TLS&#34;</span>,    <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;true&#34;</span> },
+      { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;S3_BUCKET_NAME&#34;</span>,<span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;realtime-collab-files-REPLACE_ACCOUNT_ID&#34;</span> }
+    ],
+    <span style="color:#f92672">&#34;secrets&#34;</span>: [
+      { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;DB_PASSWORD&#34;</span>,         <span style="color:#f92672">&#34;valueFrom&#34;</span>: <span style="color:#e6db74">&#34;REPLACE_DB_PASSWORD_ARN&#34;</span> },
+      { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;JWT_SECRET&#34;</span>,          <span style="color:#f92672">&#34;valueFrom&#34;</span>: <span style="color:#e6db74">&#34;REPLACE_JWT_SECRET_ARN:secret::&#34;</span> },
+      { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;TWILIO_ACCOUNT_SID&#34;</span>,  <span style="color:#f92672">&#34;valueFrom&#34;</span>: <span style="color:#e6db74">&#34;REPLACE_TWILIO_SECRET_ARN:accountSid::&#34;</span> },
+      { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;TWILIO_AUTH_TOKEN&#34;</span>,   <span style="color:#f92672">&#34;valueFrom&#34;</span>: <span style="color:#e6db74">&#34;REPLACE_TWILIO_SECRET_ARN:authToken::&#34;</span> },
+      { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;REDIS_PASSWORD&#34;</span>,     <span style="color:#f92672">&#34;valueFrom&#34;</span>: <span style="color:#e6db74">&#34;REPLACE_REDIS_SECRET_ARN&#34;</span> }
+    ],
+    <span style="color:#f92672">&#34;healthCheck&#34;</span>: {
+      <span style="color:#f92672">&#34;command&#34;</span>: [<span style="color:#e6db74">&#34;CMD-SHELL&#34;</span>, <span style="color:#e6db74">&#34;wget -qO- http://localhost:3000/health || exit 1&#34;</span>],
+      <span style="color:#f92672">&#34;interval&#34;</span>: <span style="color:#ae81ff">30</span>, <span style="color:#f92672">&#34;timeout&#34;</span>: <span style="color:#ae81ff">5</span>, <span style="color:#f92672">&#34;retries&#34;</span>: <span style="color:#ae81ff">3</span>, <span style="color:#f92672">&#34;startPeriod&#34;</span>: <span style="color:#ae81ff">60</span>
+    },
+    <span style="color:#f92672">&#34;logConfiguration&#34;</span>: {
+      <span style="color:#f92672">&#34;logDriver&#34;</span>: <span style="color:#e6db74">&#34;awslogs&#34;</span>,
+      <span style="color:#f92672">&#34;options&#34;</span>: {
+        <span style="color:#f92672">&#34;awslogs-group&#34;</span>:         <span style="color:#e6db74">&#34;/ecs/unified-backend&#34;</span>,
+        <span style="color:#f92672">&#34;awslogs-region&#34;</span>:        <span style="color:#e6db74">&#34;us-east-1&#34;</span>,
+        <span style="color:#f92672">&#34;awslogs-stream-prefix&#34;</span>: <span style="color:#e6db74">&#34;ecs&#34;</span>
+      }
+    },
+    <span style="color:#f92672">&#34;essential&#34;</span>: <span style="color:#66d9ef">true</span>
+  }]
+}
+</code></pre></div><p><img src="/images/5-Workshop/5.11-ECS-Fargate/ecs-service-status.png" alt="ECS Service"></p>
+<hr>
+<h4 id="3-create-ecs-service-using-aws-cli">3. Create ECS Service (Using AWS CLI)</h4>
+<h5 id="step-1-collect-required-parameters">Step 1: Collect Required Parameters</h5>
+<p>Access your AWS Console to gather the following IDs and ARNs:</p>
+<ol>
+<li><strong>Target Group ARNs</strong>:
+<ul>
+<li>Navigate to the <strong>EC2</strong> service ➔ select <strong>Target groups</strong> from the left-hand menu.</li>
+<li>Click on realtime-collab-dev-uni-api-tg ➔ Copy the <strong>ARN</strong> from the Details tab.</li>
+<li>Click on realtime-collab-dev-uni-ws-tg ➔ Copy the <strong>ARN</strong>.</li>
+</ul>
+</li>
+<li><strong>Private Subnet IDs</strong>:
+<ul>
+<li>Navigate to the <strong>VPC</strong> service ➔ select <strong>Subnets</strong> ➔ Copy the Subnet IDs for both private-subnet-1 (looks like <code>subnet-xxxxxxxxxxxx</code>) and private-subnet-2.</li>
+</ul>
+</li>
+<li><strong>Security Group ID</strong>:
+<ul>
+<li>Navigate to the <strong>VPC</strong> service ➔ select <strong>Security groups</strong> ➔ Copy the Group ID for realtime-collab-dev-unified-backend-sg (looks like <code>sg-xxxxxxxxxxxx</code>).</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h5 id="step-2-execute-service-creation-command-on-terminal">Step 2: Execute Service Creation Command on Terminal</h5>
+<p>Open your terminal (ensure you have the AWS CLI installed and configured with credentials) and run the following command (replace <code>REPLACE_...</code> placeholders with the values you gathered in Step 1):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">aws ecs create-service <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  --cluster realtime-collab-dev <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  --service-name unified-backend <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  --task-definition realtime-collab-unified-backend <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  --desired-count <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  --launch-type FARGATE <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  --network-configuration <span style="color:#e6db74">&#39;awsvpcConfiguration={subnets=[REPLACE_PRIVATE_SUBNET_1_ID,REPLACE_PRIVATE_SUBNET_2_ID],securityGroups=[REPLACE_UNIFIED_BACKEND_SG_ID],assignPublicIp=DISABLED}&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  --load-balancers <span style="color:#e6db74">&#39;[
+</span><span style="color:#e6db74">    {
+</span><span style="color:#e6db74">      &#34;targetGroupArn&#34;: &#34;REPLACE_API_TARGET_GROUP_ARN&#34;,
+</span><span style="color:#e6db74">      &#34;containerName&#34;: &#34;unified-backend&#34;,
+</span><span style="color:#e6db74">      &#34;containerPort&#34;: 3000
+</span><span style="color:#e6db74">    },
+</span><span style="color:#e6db74">    {
+</span><span style="color:#e6db74">      &#34;targetGroupArn&#34;: &#34;REPLACE_WS_TARGET_GROUP_ARN&#34;,
+</span><span style="color:#e6db74">      &#34;containerName&#34;: &#34;unified-backend&#34;,
+</span><span style="color:#e6db74">      &#34;containerPort&#34;: 3000
+</span><span style="color:#e6db74">    }
+</span><span style="color:#e6db74">  ]&#39;</span>
+</code></pre></div><p>After a successful invocation, the CLI will output the newly created Service details in JSON format.</p>
+<hr>
+<h5 id="step-3-verify-service-deployment-status">Step 3: Verify Service Deployment Status</h5>
+<ol>
+<li>Navigate to <strong>ECS</strong> ➔ <strong>Clusters</strong> ➔ Click on the <code>realtime-collab-dev</code> Cluster.</li>
+<li>In the <strong>Services</strong> tab, you should see the <strong>unified-backend</strong> service successfully created.</li>
+<li>Click on the Service name ➔ Select the <strong>Tasks</strong> tab to monitor docker image download and container provisioning. Once the tasks display status <strong>Running</strong> and the Health status shows <strong>Healthy</strong>, the system is fully operational!</li>
+</ol>
+<p><img src="/images/5-Workshop/5.11-ECS-Fargate/tasks-status.png" alt="ECS Service running healthy status"></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.10-cloudfront/" title="CloudFront Distribution"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/nguyenhuunhan-2280602174-awsreport/5-workshop/5.12-cleanup/" title="Resource Cleanup" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/clipboard.min.js?1783628023"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/perfect-scrollbar.min.js?1783628023"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/perfect-scrollbar.jquery.min.js?1783628023"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/jquery.sticky.js?1783628023"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/featherlight.min.js?1783628023"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/highlight.pack.js?1783628023"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/modernizr.custom-3.6.0.js?1783628023"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/learn.js?1783628023"></script>
+    <script src="/nguyenhuunhan-2280602174-awsreport/js/hugo-learn.js?1783628023"></script>
+
+    <link href="/nguyenhuunhan-2280602174-awsreport/mermaid/mermaid.css?1783628023" rel="stylesheet" />
+    <script src="/nguyenhuunhan-2280602174-awsreport/mermaid/mermaid.js?1783628023"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
