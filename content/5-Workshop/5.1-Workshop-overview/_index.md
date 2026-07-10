@@ -13,7 +13,7 @@ The **AntiGroup** platform is designed based on a Cloud Native and Microservices
 #### Infrastructure Architecture Diagram
 The detailed architecture is represented by the following diagram:
 
-![AntiGroup AWS Architecture](/nguyenhuunhan-2280602174-awsreport/images/2-Proposal/Diagram.png)
+![ConnectPrivate](/nguyenhuunhan-2280602174-awsreport/images/2-Proposal/Diagram.png)
 
 #### Workshop Roadmap
 In this workshop, we will go through the following configuration steps:
@@ -27,4 +27,5 @@ In this workshop, we will go through the following configuration steps:
 8. **Application Load Balancer**: Create Target Groups and configure ALB listener rules.
 9. **CloudFront Distribution**: Set up global HTTPS Ingress and integrate AWS WAF.
 10. **ECS Fargate**: Register Task Definitions and deploy ECS Services with 2 tasks.
-11. **Resource Cleanup**: Step-by-step deletion guide to avoid unwanted charges.
+11. **Resource Cleanup**: Step-by-step deletion guide to avoid unwanted charges.
+
