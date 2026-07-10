@@ -28,7 +28,7 @@ chapter : false
 **Internship Duration:** From April 17, 2026 to July 09, 2026
 
 <p align="center">
-  <img src="/images/avatar.png" alt="Avatar" width="500">
+  <img src="/nguyenhuunhan-2280602174-awsreport/images/avatar.png" alt="Avatar" width="500">
 </p>
 
 

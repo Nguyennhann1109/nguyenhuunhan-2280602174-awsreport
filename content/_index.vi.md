@@ -26,7 +26,7 @@ chapter : false
 **Thời gian thực tập:** Từ ngày 17/04/2026 đến ngày 09/07/2026
 
 <p align="center">
-  <img src="/images/avatar.png" alt="Avatar" width="500">
+  <img src="/nguyenhuunhan-2280602174-awsreport/images/avatar.png" alt="Avatar" width="500">
 </p>
 
 ### Nội dung báo cáo
