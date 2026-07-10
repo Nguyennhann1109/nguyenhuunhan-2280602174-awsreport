@@ -13,7 +13,7 @@ The **AntiGroup** platform is designed based on a Cloud Native and Microservices
 #### Infrastructure Architecture Diagram
 The detailed architecture is represented by the following diagram:
 
-![ConnectPrivate](/nguyenhuunhan-2280602174-awsreport/images/2-Proposal/Diagram.png)
+![ConnectPrivate](/nguyenhuunhan-2280602174-awsreport/images/4-Proposal/Diagram.png)
 
 #### Workshop Roadmap
 In this workshop, we will go through the following configuration steps:
