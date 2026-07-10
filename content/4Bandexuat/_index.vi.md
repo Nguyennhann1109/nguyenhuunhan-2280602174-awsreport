@@ -31,7 +31,7 @@ Bản đề xuất giải pháp kỹ thuật này tập trung giải quyết cá
 ### 3. Kiến trúc giải pháp
 Kiến trúc hệ thống Cloud-native trên AWS được thể hiện qua sơ đồ dưới đây:
 
-![ConnectPrivate](/nguyenhuunhan-2280602174-awsreport/images/4-proposal/diagram.png)
+![ConnectPrivate](/nguyenhuunhan-2280602174-awsreport/images/4-Proposal/Diagram.png)
 
 *Dịch vụ AWS sử dụng và Luồng hoạt động*
 - **Amazon VPC & Subnets (Multi-AZ)**: Xây dựng hạ tầng mạng an toàn Multi-AZ chia thành Public Subnets (chứa ALB, NAT Gateway) và Private Subnets bảo vệ các ứng dụng (ECS Fargate Tasks, RDS PostgreSQL, ElastiCache Redis).
