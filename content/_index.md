@@ -25,7 +25,7 @@ chapter : false
 
 **Internship Position:** Workforce Bootcamp – First Cloud AI Journey
 
-**Internship Duration:** From April 17, 2026 to July 09, 2026
+**Internship Duration:** From April 17, 2026 to July 30, 2026
 
 <p align="center">
   <img src="/nguyenhuunhan-2280602174-awsreport/images/avatar.png" alt="Avatar" width="500">

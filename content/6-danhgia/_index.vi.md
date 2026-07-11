@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 6. </b> "
 ---
 
-Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Vietnam** từ ngày **17/04/2026** đến ngày **09/07/2026**, em đã có cơ hội quý báu để học hỏi, rèn luyện và áp dụng các kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.
+Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Vietnam** từ ngày **17/04/2026** đến ngày **30/07/2026**, em đã có cơ hội quý báu để học hỏi, rèn luyện và áp dụng các kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.
 
 Qua dự án này, em không chỉ tiếp cận được các ngôn ngữ lập trình mới và cách triển khai hệ thống lên môi trường Cloud nhằm tối ưu hóa hiệu suất hoạt động, mà còn cải thiện đáng kể kỹ năng lập trình, phân tích, viết báo cáo, giao tiếp cũng như làm việc nhóm.
 
