@@ -27,9 +27,9 @@ https://youtube.com/playlist?list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&si=03wYZ3PL
 
 | Thứ | Nội dung thực hiện | Tài liệu tham khảo |
 |:---:|--------------------|--------------------|
-| **6** | - Tham gia buổi Kick-off chương trình **First Cloud AI Journey – Workforce Bootcamp 2026**.<br><br>- Làm quen với mentor và các thành viên trong chương trình.<br><br>- Tìm hiểu lộ trình đào tạo và quy trình thực tập. | https://cloudjourney.awsstudygroup.com/ |
-| **7** | - Tạo tài khoản **AWS Free Tier**.<br><br>- Kích hoạt **Multi-Factor Authentication (MFA)**.<br><br>- Hoàn thành các nhiệm vụ làm quen với AWS để nhận AWS Credits. | https://cloudjourney.awsstudygroup.com/ |
-| **2** | - Làm quen với **AWS Management Console**.<br><br>- Tìm hiểu các dịch vụ cơ bản của AWS.<br><br>- Thực hành các thao tác quản lý tài nguyên đầu tiên trên AWS. | https://cloudjourney.awsstudygroup.com/ |
+| **6** | - Tham gia buổi Kick-off chương trình **First Cloud AI Journey – Workforce Bootcamp 2026**.<br><br>- Làm quen với mentor và các thành viên trong chương trình.<br><br>- Tìm hiểu lộ trình đào tạo và quy trình thực tập. |  |
+| **7** | - Tạo tài khoản **AWS Free Tier**.<br><br>- Kích hoạt **Multi-Factor Authentication (MFA)**.<br><br>- Hoàn thành các nhiệm vụ làm quen với AWS để nhận AWS Credits. | https://aws.amazon.com/vi/console/ |
+| **2** | - Làm quen với **AWS Management Console**.<br><br>- Tìm hiểu các dịch vụ cơ bản của AWS.<br><br>- Thực hành các thao tác quản lý tài nguyên đầu tiên trên AWS. | https://aws.amazon.com/vi/console/ |
 | **3** | - Thảo luận với các thành viên để lựa chọn đề tài thực hiện Project.<br><br>- Thành lập nhóm thực hiện dự án. | Tài liệu nội bộ |
 | **4** | - Ôn tập lại các nội dung đã học trong tuần.<br><br>- Hoàn thiện các nhiệm vụ và yêu cầu của tuần đầu tiên. | Ghi chú cá nhân |
 

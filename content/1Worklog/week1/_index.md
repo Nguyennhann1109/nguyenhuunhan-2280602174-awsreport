@@ -27,9 +27,9 @@ https://youtube.com/playlist?list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&si=03wYZ3PL
 
 | Day | Activities | References |
 |:---:|------------|------------|
-| **Fri** | - Participated in the **First Cloud AI Journey – Workforce Bootcamp 2026** Kick-off session.<br><br>- Met the mentors and fellow participants.<br><br>- Learned about the internship roadmap and training process. | https://cloudjourney.awsstudygroup.com/ |
-| **Sat** | - Created an **AWS Free Tier** account.<br><br>- Enabled **Multi-Factor Authentication (MFA)**.<br><br>- Completed the AWS onboarding tasks to receive AWS Credits. | https://cloudjourney.awsstudygroup.com/ |
-| **Mon** | - Explored the **AWS Management Console**.<br><br>- Learned the basic AWS services.<br><br>- Performed the first hands-on exercises on AWS resources. | https://cloudjourney.awsstudygroup.com/ |
+| **Fri** | - Participated in the **First Cloud AI Journey – Workforce Bootcamp 2026** Kick-off session.<br><br>- Met the mentors and fellow participants.<br><br>- Learned about the internship roadmap and training process. |  |
+| **Sat** | - Created an **AWS Free Tier** account.<br><br>- Enabled **Multi-Factor Authentication (MFA)**.<br><br>- Completed the AWS onboarding tasks to receive AWS Credits. | https://aws.amazon.com/vi/console/ |
+| **Mon** | - Explored the **AWS Management Console**.<br><br>- Learned the basic AWS services.<br><br>- Performed the first hands-on exercises on AWS resources. | https://aws.amazon.com/vi/console/ |
 | **Tue** | - Discussed project ideas with teammates.<br><br>- Formed the project team for the internship. | Internal documentation |
 | **Wed** | - Reviewed the knowledge learned during the week.<br><br>- Completed the remaining onboarding tasks. | Personal notes |
 
