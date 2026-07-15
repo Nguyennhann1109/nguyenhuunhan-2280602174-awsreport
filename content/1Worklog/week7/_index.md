@@ -37,3 +37,4 @@ After completing the seventh week, I achieved the following outcomes:
 - Completed the initial folder structure and navigation system.
 - Built the outline for the Workshop chapters and sections.
 - Prepared the development environment for creating the Workshop content in the following weeks.
+

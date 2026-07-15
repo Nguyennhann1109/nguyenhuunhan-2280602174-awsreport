@@ -124,3 +124,4 @@ Estimated infrastructure costs in us-east-1 based on the actual report from the 
 *Long-term Values*
 - A solid reference architecture for serverless WebSockets, WebRTC signaling, and S3-based static web hosting on AWS.
 - Standardized manual and helper-script-based deployment process using ECR pushes and container deployment.
+

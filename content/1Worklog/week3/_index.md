@@ -41,3 +41,4 @@ After completing the third week, I achieved the following outcomes:
 - Gained a clearer understanding of deploying and configuring AWS services in real environments.
 - Improved troubleshooting and problem-solving skills during lab implementation.
 - Built a solid foundation for the advanced modules in the following weeks.
+

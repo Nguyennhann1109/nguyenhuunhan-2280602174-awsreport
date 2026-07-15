@@ -65,3 +65,4 @@ Việc trực tiếp nghe các chuyên gia phân tích kiến trúc AWS giúp qu
 ## Đánh giá và cảm nhận
 
 Sự kiện mang lại một trải nghiệm cực kỳ giá trị và thiết thực, đặc biệt là với sinh viên. Những kiến thức trên giảng đường thường giúp xây dựng nền tảng lý thuyết vững chắc, nhưng những câu chuyện thực chiến từ FCAJ đã chỉ ra mức độ phức tạp (complexity) khi một hệ thống thực sự mở rộng và phục vụ doanh nghiệp. Nhìn những con số ước tính chi phí chi tiết từng dịch vụ, cảm giác choáng ngợp ban đầu nhanh chóng chuyển thành sự hào hứng. Buổi chia sẻ thôi thúc bản thân phải tìm hiểu sâu hơn về kiến trúc đám mây để không chỉ xây dựng được những ứng dụng mobile hay nền tảng e-commerce hoạt động mượt mà, mà còn có khả năng thiết kế hạ tầng linh hoạt, tối ưu chi phí và sẵn sàng đáp ứng lượng truy cập lớn trong thực tế.
+

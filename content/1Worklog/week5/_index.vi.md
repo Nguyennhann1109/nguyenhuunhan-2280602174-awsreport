@@ -37,3 +37,4 @@ Sau khi hoàn thành tuần thứ năm, em đã đạt được các kết quả
 - Củng cố khả năng xử lý sự cố và tối ưu cấu hình trong quá trình triển khai.
 - Hiểu rõ hơn quy trình thực hiện một bài Lab hoàn chỉnh trên nền tảng AWS.
 - Sẵn sàng bước sang giai đoạn hoàn thiện Module 5 và bắt đầu xây dựng Workshop.
+

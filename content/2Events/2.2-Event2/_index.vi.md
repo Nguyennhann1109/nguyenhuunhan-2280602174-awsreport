@@ -71,3 +71,4 @@ Sự chuyển dịch ấn tượng khi 2/3 số sinh viên tham gia chuyến đi
 - Chuyến đi này thực sự truyền cho mình một nguồn năng lượng cực lớn nhưng cũng đi kèm một chút áp lực lành mạnh. Nhìn hình ảnh các bạn sinh viên Cần Thơ phải thức dậy từ 5 giờ sáng, vượt chặng đường 180km để có mặt tại AWS, mình nhận ra làn sóng cạnh tranh từ các bạn trẻ ngoài kia lớn đến thế nào.
 
 - Sự kiện đã đập tan tư duy cũ kỹ theo kiểu "hết thời trốn trong hang luyện công rồi tự nhiên thành anh hùng". Muốn có cơ hội tốt, bắt buộc phải xông pha, tham gia cộng đồng để tăng tính visibility của bản thân. Đúng như câu kết thúc đầy cảm hứng của diễn giả ở cuối chương trình: Vận may không tự nhiên xuất hiện, nhưng chúng ta càng hành động, càng dấn thân thì vận may sẽ tìm đến càng nhiều.
+

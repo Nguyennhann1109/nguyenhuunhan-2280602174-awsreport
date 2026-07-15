@@ -63,3 +63,4 @@ For someone accustomed to writing Spring Boot backend code or designing local SQ
 
 - This trip provided a massive surge of energy, tempered by a healthy sense of pressure. Seeing students from Can Tho wake up at 5:00 AM to travel 180km to reach AWS made me realize the scale of competition from young people out there.
 - The event shattered the outdated belief that "hiding away to study" is enough to succeed. To secure good opportunities, one must be proactive and engage with the community to increase self-visibility. As the speaker inspiringly concluded: Luck does not happen by chance; the more we act and immerse ourselves in the community, the more opportunities will find their way to us.
+

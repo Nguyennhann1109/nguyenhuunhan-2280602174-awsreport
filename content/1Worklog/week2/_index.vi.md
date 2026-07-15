@@ -43,3 +43,4 @@ Sau khi hoàn thành tuần thứ hai, em đã đạt được các kết quả 
 - Làm quen với cơ chế phân quyền thông qua AWS IAM.
 - Hiểu được vai trò của AWS KMS trong việc mã hóa dữ liệu và AWS WAF trong việc bảo vệ ứng dụng Web.
 - Chuẩn bị đầy đủ kiến thức nền tảng để thực hiện các bài Lab và Workshop ở những tuần tiếp theo.
+

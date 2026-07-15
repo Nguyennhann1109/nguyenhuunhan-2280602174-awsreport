@@ -37,3 +37,4 @@ After completing the fifth week, I achieved the following outcomes:
 - Strengthened troubleshooting and configuration optimization skills during lab implementation.
 - Gained a better understanding of the end-to-end workflow of AWS hands-on labs.
 - Built a solid foundation for the upcoming Workshop and Project development phase.
+

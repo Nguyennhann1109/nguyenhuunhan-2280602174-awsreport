@@ -43,3 +43,4 @@ After completing the first week, I achieved the following outcomes:
 - Became familiar with the **AWS Management Console** and fundamental AWS services.
 - Gained an understanding of the internship learning roadmap and training objectives.
 - Connected with mentors and fellow participants while forming a project team for the following stages of the internship.
+

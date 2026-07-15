@@ -59,3 +59,4 @@ Hearing experts directly dissect AWS architectures brings a high level of practi
 ## Evaluation and Reflections
 
 The event provided an immensely valuable and practical experience, especially for a student. While university lectures lay down a solid theoretical foundation, the real-world battle stories from FCAJ exposed the sheer complexity involved when a system scales up to serve an actual enterprise. Looking at the highly granular cost estimations for each service, my initial sense of overwhelm quickly turned into genuine excitement. This session motivates me to dive deeper into cloud architecture, ensuring that I can not only build smooth-running mobile applications or e-commerce platforms but also design flexible, cost-optimized infrastructure ready to handle heavy production traffic.
+

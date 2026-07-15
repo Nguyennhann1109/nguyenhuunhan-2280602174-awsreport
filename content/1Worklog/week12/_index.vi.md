@@ -37,3 +37,4 @@ Sau khi hoàn thành tuần thứ mười hai, em đã đạt được các kế
 - Hoàn thành báo cáo thực tập, Worklog và các tài liệu kỹ thuật liên quan.
 - Chuẩn bị đầy đủ slide và video demo phục vụ cho buổi báo cáo tổng kết.
 - Tích lũy thêm nhiều kiến thức và kinh nghiệm thực tế về AWS Cloud, Backend Realtime, Workshop Development và quy trình làm việc trong môi trường doanh nghiệp.
+

@@ -37,3 +37,4 @@ After completing the twelfth week, I achieved the following outcomes:
 - Completed the internship report, worklog, and all related technical documentation.
 - Prepared the presentation slides and demonstration video for the final presentation.
 - Gained valuable practical experience in AWS Cloud, Backend Realtime Development, Workshop Development, and collaborative software development in a professional environment.
+

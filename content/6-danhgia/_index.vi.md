@@ -41,3 +41,4 @@ Bên cạnh những điểm mạnh đã phát huy, em nhận thấy mình cần 
 
 - **Tư duy giải quyết vấn đề:** Tiếp tục cải thiện cách lập luận logic, cấu trúc luận điểm chặt chẽ để các đề xuất giải quyết vấn đề trở nên thuyết phục và mang tính chiến lược hơn.
 - **Kỹ năng giao tiếp & Xử lý tình huống:** Nâng cao sự linh hoạt trong kỹ năng giao tiếp hàng ngày cũng như giao tiếp chuyên nghiệp trong công việc; rèn luyện khả năng quản trị và xử lý tình huống phát sinh một cách khéo léo, hiệu quả.
+

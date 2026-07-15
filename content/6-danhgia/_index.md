@@ -43,3 +43,4 @@ While capitalizing on my current strengths, I target the following areas for con
 
 - **Problem-Solving Mindset:** Refine structured and data-backed reasoning to make technical recommendations and problem-solving proposals more compelling and strategically persuasive.
 - **Communication & Situational Handling:** Enhance day-to-day interpersonal and workplace communication agility, while developing better emotional intelligence to handle emerging professional situations tactfully and effectively.
+

@@ -77,3 +77,4 @@ Once deployed, the synchronization workflow triggers completely out-of-band via 
 > **Original Post:** [AWS Networking & Content Delivery Blog - Deploying internal DNS zones for internet-facing load balancers](https://aws.amazon.com/blogs/networking-and-content-delivery/deploying-internal-dns-zones-for-internet-facing-load-balancers/)
 
 ![ConnectPrivate](/nguyenhuunhan-2280602174-awsreport/images/arcblog2.png)
+

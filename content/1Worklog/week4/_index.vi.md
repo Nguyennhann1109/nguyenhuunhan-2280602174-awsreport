@@ -41,3 +41,4 @@ Sau khi hoàn thành tuần thứ tư, em đã đạt được các kết quả 
 - Củng cố khả năng phân tích và xử lý các tình huống phát sinh trong quá trình triển khai.
 - Hiểu rõ hơn về quy trình quản lý tài nguyên và vận hành các dịch vụ AWS.
 - Chuẩn bị đầy đủ kiến thức để tiếp tục các Module nâng cao trong những tuần tiếp theo.
+

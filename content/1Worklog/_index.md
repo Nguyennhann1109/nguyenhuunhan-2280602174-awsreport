@@ -20,3 +20,4 @@ My work log was carried out over a three-month internship period. The weekly act
 10. [Week 10: Project implementation](week10/)
 11. [Week 11: System Integration, Optimization, and Testing](week11/)
 12. [Week 12: Finalization and Report Preparation](week12/)
+

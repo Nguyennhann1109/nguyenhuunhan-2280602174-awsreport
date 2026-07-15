@@ -41,3 +41,4 @@ Sau khi hoàn thành tuần thứ ba, em đã đạt được các kết quả s
 - Hiểu rõ hơn quy trình triển khai và cấu hình các dịch vụ AWS trong môi trường thực tế.
 - Nâng cao kỹ năng xử lý lỗi và khắc phục sự cố trong quá trình thực hành.
 - Chuẩn bị đầy đủ kiến thức và kinh nghiệm để tiếp tục các Module nâng cao ở những tuần tiếp theo.
+

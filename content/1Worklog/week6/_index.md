@@ -37,3 +37,4 @@ After completing the sixth week, I achieved the following outcomes:
 - Improved troubleshooting and configuration optimization skills in AWS environments.
 - Gained a comprehensive understanding of AWS service deployment and management through practical labs.
 - Built a solid foundation for the Workshop development and real-world Project implementation phase.
+

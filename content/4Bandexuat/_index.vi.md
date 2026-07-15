@@ -121,3 +121,4 @@ Dự án được ước tính chi phí hạ tầng hàng tháng tại khu vực
 *Giá trị lâu dài*
 - Xây dựng một kiến trúc tham chiếu mẫu (reference architecture) về hệ thống Chat & Streaming Cloud Native trên AWS cho các khóa sinh viên và dự án tiếp theo trong phòng lab.
 - Quy trình triển khai và bàn giao ứng dụng được tối ưu hóa thông qua các script hỗ trợ đóng gói và đẩy image tự động (như deploy-ecr.sh), giúp tiết kiệm thời gian phát triển và bàn giao hạ tầng.
+

@@ -61,3 +61,4 @@ For interns and students navigating the AWS platform, this provides a compelling
 > **Original Post:** [AWS DevOps Blog - Accelerate your software development lifecycle with Amazon Q](https://aws.amazon.com/blogs/devops/accelerate-your-software-development-lifecycle-with-amazon-q/)
 
 ![ConnectPrivate](/nguyenhuunhan-2280602174-awsreport/images/arcblog3.png)
+

@@ -76,3 +76,4 @@ Khi hệ thống đi vào hoạt động, quá trình cập nhật IP sẽ diễ
 > **Bài viết gốc:** [AWS Networking & Content Delivery Blog - Deploying internal DNS zones for internet-facing load balancers](https://aws.amazon.com/blogs/networking-and-content-delivery/deploying-internal-dns-zones-for-internet-facing-load-balancers/)
 
 ![ConnectPrivate](/nguyenhuunhan-2280602174-awsreport/images/arcblog2.png)
+

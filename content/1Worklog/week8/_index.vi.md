@@ -37,3 +37,4 @@ Sau khi hoàn thành tuần thứ tám, em đã đạt được các kết quả
 - Kết nối thành công Redis và PostgreSQL phục vụ cho Backend Realtime.
 - Xây dựng cơ chế xác thực người dùng thông qua JWT trước khi kết nối Socket.
 - Hoàn thành nền tảng ban đầu cho các chức năng Realtime sẽ được phát triển trong các tuần tiếp theo.
+

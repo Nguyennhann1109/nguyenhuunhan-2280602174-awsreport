@@ -37,3 +37,4 @@ Sau khi hoàn thành tuần thứ mười, em đã đạt được các kết qu
 - Đồng bộ được quá trình trao đổi tín hiệu giữa các Client trong thời gian thực.
 - Tối ưu hiệu năng xử lý các Socket Events và giảm độ trễ của hệ thống.
 - Kiểm thử thành công các chức năng Chat, Presence và Voice Channel trong môi trường phát triển.
+

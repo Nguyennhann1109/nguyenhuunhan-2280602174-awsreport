@@ -43,3 +43,4 @@ After completing the second week, I achieved the following outcomes:
 - Became familiar with access control using AWS Identity and Access Management (IAM).
 - Learned the roles of AWS KMS for encryption and AWS WAF for web application security.
 - Built a strong technical foundation for the upcoming labs and workshop activities.
+

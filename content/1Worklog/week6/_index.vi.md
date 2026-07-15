@@ -37,3 +37,4 @@ Sau khi hoàn thành tuần thứ sáu, em đã đạt được các kết quả
 - Nâng cao kỹ năng xử lý sự cố và tối ưu cấu hình trong môi trường AWS.
 - Có cái nhìn tổng thể về quy trình triển khai và quản lý các dịch vụ AWS thông qua các bài Lab.
 - Sẵn sàng bước sang giai đoạn xây dựng Workshop và triển khai Project thực tế.
+

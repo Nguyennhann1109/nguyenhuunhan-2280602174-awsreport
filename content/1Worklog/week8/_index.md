@@ -37,3 +37,4 @@ After completing the eighth week, I achieved the following outcomes:
 - Established PostgreSQL and Redis connections for the realtime backend.
 - Implemented JWT-based authentication before allowing socket connections.
 - Completed the foundational architecture for implementing realtime features in the following weeks.
+

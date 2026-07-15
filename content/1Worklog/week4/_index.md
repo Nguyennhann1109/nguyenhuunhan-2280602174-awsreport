@@ -41,3 +41,4 @@ After completing the fourth week, I achieved the following outcomes:
 - Strengthened troubleshooting and analytical skills while completing the lab exercises.
 - Gained a better understanding of AWS resource management and operational workflows.
 - Built a stronger foundation for the advanced modules in the following weeks.
+
