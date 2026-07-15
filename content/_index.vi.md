@@ -34,9 +34,9 @@ chapter : false
  1. [Nhật ký công việc](1worklog/)
  2. [Các event đã tham gia & blog đã đăng](2events/)
  3. [Các blog đã đăng](3blogs)
- 4. [Bản đề xuất](3bandexuat/)
- 5. [Workshop](4-workshop/)
- 6. [Tự đánh giá](5-danhgia/)
- 7. [Chia sẻ & đóng góp ý kiến](6-chiasedonggopykien/)
+ 4. [Bản đề xuất](4bandexuat/)
+ 5. [Workshop](5-workshop/)
+ 6. [Tự đánh giá](6-danhgia/)
+ 7. [Chia sẻ & đóng góp ý kiến](7-chiasedonggopykien/)
 
 

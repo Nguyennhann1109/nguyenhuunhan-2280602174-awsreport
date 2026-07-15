@@ -37,8 +37,8 @@ chapter : false
 1. [Work Log](1worklog/)
 2. [Attended Events](2eventblog/)
 3. [Published Blogs](3blogs)
-4. [Proposal](3bandexuat/)
-5. [Workshop](4-workshop/)
-6. [Self-Evaluation](5-danhgia/)
-7. [Sharing and Feedback](6-chiasedonggopykien/)
+4. [Proposal](4bandexuat/)
+5. [Workshop](5-workshop/)
+6. [Self-Evaluation](6-danhgia/)
+7. [Sharing and Feedback](7-chiasedonggopykien/)
 
