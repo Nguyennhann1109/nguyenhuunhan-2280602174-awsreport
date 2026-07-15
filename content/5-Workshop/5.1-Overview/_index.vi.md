@@ -13,7 +13,7 @@ Nền tảng **AntiCollab** được thiết kế dựa trên kiến trúc Cloud
 #### Sơ đồ kiến trúc hạ tầng
 Kiến trúc chi tiết của nền tảng được mô tả qua sơ đồ dưới đây:
 
-![AntiCollab AWS Architecture](/nguyenhuunhan-2280602174-awsreport/images/2-Proposal/Diagram.png)
+![AntiCollab AWS Architecture](/nguyenhuunhan-2280602174-awsreport/images/4-Proposal/Diagram.png)
 
 #### Tổng quan các bước thực hiện
 Trong workshop này, chúng ta sẽ lần lượt đi qua các cấu hình chi tiết:

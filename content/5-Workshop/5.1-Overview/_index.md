@@ -13,7 +13,7 @@ The **AntiCollab** platform is designed based on a Cloud Native and Microservice
 #### Network Architecture Diagram
 The detailed architecture of the platform is described in the diagram below:
 
-![AntiCollab AWS Architecture](/nguyenhuunhan-2280602174-awsreport/images/2-Proposal/Diagram.png)
+![AntiCollab AWS Architecture](/nguyenhuunhan-2280602174-awsreport/images/4-Proposal/Diagram.png)
 
 #### Workshop Roadmap
 In this workshop, we will go through the following configuration steps:
