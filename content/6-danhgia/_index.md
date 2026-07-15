@@ -6,8 +6,6 @@ chapter : false
 pre : "<b>6.</b>"
 ---
 
-# Self-Evaluation
-
 Throughout my internship at **Amazon Web Services Vietnam Co., Ltd** from **April 17, 2026**, to **July 30, 2026**, I have had the invaluable opportunity to learn, grow, and bridge the gap between academic theories and professional execution.
 
 Through this project, I was able to not only engage with new programming languages and explore cloud deployment methodologies focused on performance optimization, but also significantly mature my engineering, analytical, reporting, communication, and collaborative skill sets.
