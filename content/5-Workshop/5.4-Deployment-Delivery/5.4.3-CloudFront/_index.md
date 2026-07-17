@@ -164,3 +164,4 @@ Deployment will take **5 - 10 minutes**. Once the status changes to active, copy
 
 ![CloudFront Distribution Completed Domain Name](/nguyenhuunhan-2280602174-awsreport/images/5-Workshop/5.4-Deployment-Delivery/5.4.3-CloudFront/cf-domain.png)
 
+* Access and experience the system at: **`https://d2gqfyhv3cphx1.cloudfront.net`**

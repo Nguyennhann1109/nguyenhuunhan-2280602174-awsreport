@@ -165,3 +165,5 @@ Quá trình deploy các thay đổi sẽ diễn ra từ **5 - 10 phút**. Khi St
 
 ![Địa chỉ Domain name CloudFront hoàn thành](/nguyenhuunhan-2280602174-awsreport/images/5-Workshop/5.4-Deployment-Delivery/5.4.3-CloudFront/cf-domain.png)
 
+* Truy cập và trải nghiệm trực tiếp hệ thống tại địa chỉ: **`https://d2gqfyhv3cphx1.cloudfront.net`**
+
